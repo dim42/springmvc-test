@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+h2 {
+  margin-left: 10%;
+}
+
+#pay-form,#result-details {
+  float: right;
+  margin-right: 30%;
+}
+
+#accounting-items {
+  margin-left: 30%;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}

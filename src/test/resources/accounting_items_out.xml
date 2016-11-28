@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<accounting-item-list last-changed="Sun Mar 08 13:27:49 MSK 2015">
+    <accounting-item com="1" id="1" name="Beeline">
+        <field mask="\d{10}" name="account" title="tel number" value="1122334455"/>
+        <field mask="\d+\.\d{2}" name="amount" title="amount" value="7465.43"/>
+        <field mask="\w*" name="comment" title="comment" value="comment1"/>
+    </accounting-item>
+    <accounting-item com="2" id="2" name="WebMoney">
+        <field mask="R\d{10}" name="account" title="Ruble account"/>
+        <field mask="\d+\.\d{2}" name="amount" title="amount"/>
+        <field mask="\w*" name="comment" title="comment"/>
+    </accounting-item>
+</accounting-item-list>

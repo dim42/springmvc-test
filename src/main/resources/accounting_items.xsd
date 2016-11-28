@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="accounting-item-list" type="accountingItemList"/>
+
+  <xs:element name="accountingItem" type="accountingItem"/>
+
+  <xs:element name="field" type="field"/>
+
+  <xs:complexType name="field">
+    <xs:sequence/>
+    <xs:attribute name="mask" type="xs:string"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="title" type="xs:string"/>
+    <xs:attribute name="value" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="accountingItemList">
+    <xs:sequence>
+      <xs:element name="accounting-item" type="accountingItem" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="last-changed" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="accountingItem">
+    <xs:sequence>
+      <xs:element ref="field" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="com" type="xs:int"/>
+    <xs:attribute name="id" type="xs:ID"/>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>
+
